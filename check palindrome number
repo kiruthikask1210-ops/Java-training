@@ -1,0 +1,29 @@
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner as=new Scanner(System.in);
+        int num=as.nextInt();
+        int reverse=0;
+        int temp=num;
+        while(num!=0)
+        {
+            int digit=num%10;
+            reverse=reverse*10+digit;
+            num=num/10;
+        }
+        if(temp==reverse)
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("Not Palindrome");
+        }
+        
+        
+    }
+}
