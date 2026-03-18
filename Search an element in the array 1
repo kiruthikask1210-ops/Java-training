@@ -1,0 +1,27 @@
+import java.util.*;
+public class Solution {
+   public static void main(String[] args){
+       Scanner as=new Scanner(System.in);
+        int n;
+        n=as.nextInt();
+        int count=0;
+        int[]a= new int[n];
+        for (int i=0;i<n;i++){
+            a[i]=as.nextInt();
+        }
+        int s=as.nextInt();
+        for (int i=0;i<n;i++){
+            if(s==a[i]){
+                count++;
+            }
+        }
+        if(count==1)
+        {
+            System.out.println("Found");
+        }
+        else
+        {
+            System.out.println("Not Found");
+        }
+    }
+}
