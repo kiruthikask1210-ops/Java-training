@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+     public static void main(String[] args){
+          Scanner as= new Scanner(System.in);
+          int n;
+          n=as.nextInt();
+          for (int i=1;i<=n;i++){
+              if( i%5==0){
+                  break;
+              }
+              System.out.println(i);
+          }
+     }
+}
